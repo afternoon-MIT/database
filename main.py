@@ -33,14 +33,18 @@ db = SqliteDatabase(path.join(connection, "Victor.db"))
 
 
 class Teacher(Model):
-    Teacher_name = CharField()
-    Teacher_email = CharField()
-    Teacher_password = CharField()
+    teach_name = CharField()
+    teach_email = CharField()
+    teach_password = CharField()
 
     class Meta:
         database = db
 
-Student.create_table(fail_silently=True)
+Teacher.create_table(fail_silently=True)
+
+
+
+
 
 
 
@@ -55,15 +59,20 @@ db = SqliteDatabase(path.join(connection, "Victor.db"))
 
 
 class Product(Model):
-    Product_price = CharField()
-    Product_quantity = CharField()
-    Product_description = CharField()
-    product_color = CharField()
+    prod_price = CharField()
+    prod_quantity = CharField()
+    prod_description = CharField()
+    prod_color = CharField()
 
     class Meta:
         database = db
 
-Student.create_table(fail_silently=True)
+Product.create_table(fail_silently=True)
+
+
+
+
+
 
 
 from peewee import *
