@@ -1,11 +1,11 @@
 from peewee import *
 from os import path
 
-
 connection = path.dirname(path.realpath(__file__))
 db = SqliteDatabase(path.join(connection, "Victor.db"))
 
-#creating our first table
+
+# creating our first table
 
 
 class Student(Model):
@@ -16,20 +16,17 @@ class Student(Model):
     class Meta:
         database = db
 
+
 Student.create_table(fail_silently=True)
-
-
-
-
 
 from peewee import *
 from os import path
 
-
 connection = path.dirname(path.realpath(__file__))
 db = SqliteDatabase(path.join(connection, "Victor.db"))
 
-#creating our first table
+
+# creating our first table
 
 
 class Teacher(Model):
@@ -40,22 +37,17 @@ class Teacher(Model):
     class Meta:
         database = db
 
+
 Teacher.create_table(fail_silently=True)
-
-
-
-
-
-
 
 from peewee import *
 from os import path
 
-
 connection = path.dirname(path.realpath(__file__))
 db = SqliteDatabase(path.join(connection, "Victor.db"))
 
-#creating our first table
+
+# creating our first table
 
 
 class Product(Model):
@@ -67,22 +59,16 @@ class Product(Model):
     class Meta:
         database = db
 
+
 Product.create_table(fail_silently=True)
-
-
-
-
-
-
-
 from peewee import *
 from os import path
-
 
 connection = path.dirname(path.realpath(__file__))
 db = SqliteDatabase(path.join(connection, "Victor.db"))
 
-#creating our first table
+
+# creating our first table
 
 
 class User(Model):
@@ -93,5 +79,6 @@ class User(Model):
 
     class Meta:
         database = db
+
 
 Student.create_table(fail_silently=True)
